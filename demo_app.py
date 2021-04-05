@@ -15,5 +15,4 @@ with st.echo(code_location='below'):
     st.pyplot(fig)
 
     data = pd.read_csv('https://github.com/ryakina/Airbnb_NY/blob/main/AB_NYC_2019.csv', sep='\t', error_bad_lines=False)
-    data.hist()
-    plt.show()
+    data.head()
