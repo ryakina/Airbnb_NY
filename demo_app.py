@@ -14,6 +14,6 @@ with st.echo(code_location='below'):
     plt.ylim(-2, 2)
     st.pyplot(fig)
 
-    data = pd.read_csv('https://github.com/ryakina/Airbnb_NY/blob/main/AB_NYC_2019.csv')
+    data = pd.read_csv('https://github.com/ryakina/Airbnb_NY/blob/main/AB_NYC_2019.csv', sep='\t', error_bad_lines=False)
     data.hist()
     plt.show()
